@@ -1,0 +1,11 @@
+---
+- hosts: dev
+  become: yes
+  tasks: 
+   - name: This will install Apache server on the remote machine
+     apt:
+      name=apache2
+      update_cache=yes
+      state=latest
+
+...
